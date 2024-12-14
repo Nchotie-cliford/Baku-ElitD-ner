@@ -1,4 +1,4 @@
-const Doener = (props) => {
+const Pizza = (props) => {
   return (
     <div className="pizza">
         <h1>{props.name}</h1>
@@ -7,4 +7,4 @@ const Doener = (props) => {
     </div>	
   );
 };
-export default Doener;
+export default Pizza	;

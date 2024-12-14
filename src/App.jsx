@@ -1,24 +1,20 @@
 import { createRoot } from "react-dom/client";
-import Doener from "./Doener";
+import Order from "./Order";
+
+// delete the Pizza component
 
 const App = () => {
   return (
     <div>
-      <h1>Doener</h1>
-      <Doener
-        name="Doener1"
-        description="Doener Kebab"
-        image={"/public/pizzas/pepperoni.webp"}
+      <h1>Padre Gino's Pizza - Order Now</h1>
+      <Order name="Pepperoni" description="Mozzarella Cheese, Pepperoni" />
+      <Order
+        name="The Hawaiian Pizza"
+        description="Sliced Ham, Pineapple, Mozzarella Cheese"
       />
-      <Doener
-        name="Doener2"
-        description="Doener kässe"
-        image={"/public/pizzas/hawaiian.webp"}
-      />
-      <Doener
-        name="Doener3"
-        description="Doener Fleisch"
-        image={"/public/pizzas/big_meat.webp"}
+      <Order
+        name="The Big Meat Pizza"
+        description="Bacon, Pepperoni, Italian Sausage, Chorizo Sausage"
       />
     </div>
   );
